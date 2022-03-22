@@ -8,7 +8,7 @@ with open('package.json') as json_data:
     version = float(version.replace("_","."))
     print("version")
     print(version)
-    d['version'] = str(version+0.02)[0:5].replace(".","")
+    d['version'] = str(version+0.02)[0:4].replace(".","")
     d['version'] = '.'.join(list(d['version']))
     print(d['version'])
 
