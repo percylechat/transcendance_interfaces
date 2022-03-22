@@ -10,6 +10,8 @@ with open('package.json') as json_data:
     print(version)
     d['version'] = str(version+0.01)[0:4].replace(".","")
     d['version'] = '.'.join(list(d['version']))
+    if len(d['version']) == 3:
+        d['version'] += ".0"
     print(d['version'])
 
 with open('package.json', 'w') as outfile:
