@@ -1,0 +1,25 @@
+{
+  "name": "percythecat",
+  "version": "1.0.0",
+  "description": "module for transcendance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/percylechat/transcendance_interfaces.git"
+  },
+  "keywords": [
+    "percy",
+    "cat",
+    "transcendance",
+    "42"
+  ],
+  "author": "percevallechat@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/percylechat/transcendance_interfaces/issues"
+  },
+  "homepage": "https://github.com/percylechat/transcendance_interfaces#readme"
+}
