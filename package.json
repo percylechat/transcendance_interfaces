@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/percylechat/transcendance_interfaces/issues"
   },
-  "version": "1.2.5",
+  "version": "1.2.6",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,8 @@
   ],
   "main": "index.js",
   "homepage": "https://github.com/percylechat/transcendance_interfaces#readme",
-  "description": "module for transcendance"
+  "description": "module for transcendance",
+  "dependencies": {
+    "user": "^0.0.0"
+  }
 }
