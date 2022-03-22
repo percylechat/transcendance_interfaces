@@ -1,6 +1,7 @@
 #!/bin/bash
 branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 git pull origin $branch
+hs=`hostname`
 echo $hs
 if [ ${hs} = 'kusanagi' ]; then
 python3 version.py
