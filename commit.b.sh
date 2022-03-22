@@ -4,6 +4,8 @@ git pull origin $branch
 hs=`hostname`
 echo $hs
 if [ ${hs} = 'kusanagi' ]; then
+git config --global user.name "bussiere"
+git config --global user.email "bussiere@gmail.com"
 python3 version.py
 npm publish
 else
