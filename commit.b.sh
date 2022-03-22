@@ -9,6 +9,7 @@ git push origin $branch
 hs=`hostname`
 echo $hs
 if [ ${hs} = 'kusanagi' ]; then
+python3 version.py
 npm publish
 else
 echo "no  publishing no kusanagi"
