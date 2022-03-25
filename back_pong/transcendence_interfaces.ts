@@ -18,8 +18,8 @@ export interface pongConfig {
   //  physics
   ballSpeed: number;
   ballAngle: number;
-  startTime: Date;
-  lastFrameCall: Date;
+  startTime: number;
+  lastFrameCall: number;
 
   //  controls
   paddleSpeed : number; //paddles's movement speed up and down
@@ -36,7 +36,7 @@ export interface pongGameStatus {
   ballY: number;
   paddleLeftHeight: number;
   paddleRightHeight: number;
-  time: Date;
+  time: number;
 }
 
 // From the Client keyboard event listenner
