@@ -1,42 +1,39 @@
-// main interface
-export interface pongMatchInfo {
-  config: pongConfig;
-  gameStatus: pongGameStatus;
-}
-
-// global config for the match init
-export interface pongConfig {
-  //  visuals
-  gameBackgroud: number;
-  gameColor: number;
-  ballSize: number;
-  paddleLength: number;
-  paddleWidth: number;
-  paddleDistanceFromEdge: number;
-  paddleRoundness: number;
-
-  //  physics
-  ballSpeed: number;
-  ballAngle: number;
-  startTime: number;
-  lastFrameCall: number;
-
-  //  controls
-  paddleSpeed : number; //paddles's movement speed up and down
-  inputType: number; //1: keyboard, 2: mouse //maybe rm
-}
 
 // From the Server right after processing of Client's inputs
 // Sent the Client to display assets position and score mostly
 // back::pongLogic ==> front::pongClient
-export interface pongGameStatus {
+export interface pongMatchInfo {
+  // game colors
+  gameBackgroud: number;
+  gameColor: number;
+  
+  // timing
+  startTime: number;
+  timer: number;
+  lastFrameCall: number;
+  
+  // controls
+  inputType: number; //1: keyboard, 2: mouse //maybe rm
+  
+  //  scores
   scoreLeft: number;
   scoreRight: number;
+  
+  //  ball position
   ballX: number;
   ballY: number;
+  ballSize: number;
+  ballSpeed: number;
+  ballAngle: number;
+  
+  //  paddles position
   paddleLeftHeight: number;
   paddleRightHeight: number;
-  time: number;
+  paddleSpeed : number; //paddles's movement speed up and down
+  paddleLength: number;
+  paddleWidth: number;
+  paddleDistanceFromEdge: number;
+  paddleRoundness: number;
 }
 
 // From the Client keyboard event listenner
