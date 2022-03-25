@@ -36,7 +36,7 @@ export interface pongGameStatus {
   ballY: number;
   paddleLeftHeight: number;
   paddleRightHeight: number;
-  // time: Date; //todo add
+  time: Date;
 }
 
 // From the Client keyboard event listenner
