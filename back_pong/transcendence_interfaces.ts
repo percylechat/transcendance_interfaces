@@ -23,9 +23,11 @@ export interface pongMatchInfo {
   ballX: number;
   ballY: number;
   ballSize: number;
+  ballSpeed: number;
   leftBallSpeed: number;
   rightBallSpeed: number;
   ballAngle: number;
+  lastHit: string;
   
   //  paddles position
   leftPaddleHeight: number;
