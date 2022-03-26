@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/percylechat/transcendance_interfaces/issues"
   },
-  "version": "1.4.3",
+  "version": "1.4.4",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

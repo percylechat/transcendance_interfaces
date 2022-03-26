@@ -9,6 +9,9 @@ export interface pongMatchInfo {
   // game colors
   gameBackgroud: number;
   gameColor: number;
+  updateBall: boolean;
+  updateLeftPaddle: boolean;
+  updateRightPaddle: boolean;
 
   // timing
   startTime: number;
