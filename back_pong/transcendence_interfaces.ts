@@ -21,6 +21,8 @@ export interface pongMatchInfo {
   //  scores
   leftScore: number;
   rightScore: number;
+  gameStatus: string;
+  isGameOver: boolean;
   
   //  ball position
   ballX: number;
