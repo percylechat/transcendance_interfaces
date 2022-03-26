@@ -3,37 +3,47 @@
 // Sent the Client to display assets position and score mostly
 // back::pongLogic ==> front::pongClient
 export interface pongMatchInfo {
+  // sensitive values, should not be sent to client
+  backOnlyValues: pongBackOnlyValues;
+
   // game colors
   gameBackgroud: number;
   gameColor: number;
-  
+
   // timing
   startTime: number;
   timer: number;
   lastFrameCall: number;
-  
-  // controls
-  inputType: number; //1: keyboard, 2: mouse //maybe rm
-  
+
   //  scores
-  scoreLeft: number;
-  scoreRight: number;
+  leftScore: number;
+  rightScore: number;
   
   //  ball position
   ballX: number;
   ballY: number;
   ballSize: number;
-  ballSpeed: number;
+  leftPaddleBallSpeed: number;
+  rightPaddleBallSpeed: number;
   ballAngle: number;
   
   //  paddles position
-  paddleLeftHeight: number;
-  paddleRightHeight: number;
-  paddleSpeed : number; //paddles's movement speed up and down
-  paddleLength: number;
+  leftPaddleHeight: number;
+  rightPaddleHeight: number;
+  leftPaddleSpeed : number; //paddles's movement speed up and down
+  rightPaddleSpeed : number; //paddles's movement speed up and down
+  leftPaddleLength: number;
+  rightPaddleLength: number;
   paddleWidth: number;
   paddleDistanceFromEdge: number;
   paddleRoundness: number;
+}
+
+// Only used by the server and never sent to client
+interface pongBackOnlyValues {
+  matchId: string;
+  rightPaddleId: string;
+  leftPaddleId: string;
 }
 
 // From the Client keyboard event listenner
