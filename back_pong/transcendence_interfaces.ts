@@ -23,8 +23,8 @@ export interface pongMatchInfo {
   ballX: number;
   ballY: number;
   ballSize: number;
-  leftPaddleBallSpeed: number;
-  rightPaddleBallSpeed: number;
+  leftBallSpeed: number;
+  rightBallSpeed: number;
   ballAngle: number;
   
   //  paddles position
@@ -42,8 +42,8 @@ export interface pongMatchInfo {
 // Only used by the server and never sent to client
 interface pongBackOnlyValues {
   matchId: string;
-  rightPaddleId: string;
-  leftPaddleId: string;
+  rightId: string;
+  leftId: string;
 }
 
 // From the Client keyboard event listenner
