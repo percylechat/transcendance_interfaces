@@ -42,7 +42,7 @@ export interface pongMatchInfo {
 }
 
 // Only used by the server and never sent to client
-interface pongBackOnlyValues {
+export interface pongBackOnlyValues {
   rightId: string;
   leftId: string;
 }
