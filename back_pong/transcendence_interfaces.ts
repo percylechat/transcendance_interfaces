@@ -49,6 +49,7 @@ export interface pongMatchInfo {
   powerUpX: number;
   powerUpY: number;
   powerUpTimer: number;
+  powerUpType: string;
 }
 
 // Only used by the server and never sent to client
