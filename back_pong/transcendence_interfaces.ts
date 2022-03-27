@@ -24,7 +24,7 @@ export interface pongMatchInfo {
   gameStatus: string;
   isGameOver: boolean;
   
-  //  ball position
+  //  ball data
   ballX: number;
   ballY: number;
   ballSize: number;
@@ -34,7 +34,7 @@ export interface pongMatchInfo {
   ballAngle: number;
   lastHit: string;
   
-  //  paddles position
+  //  paddles data
   leftPaddleHeight: number;
   rightPaddleHeight: number;
   leftPaddleSpeed : number; //paddles's movement speed up and down
@@ -44,6 +44,11 @@ export interface pongMatchInfo {
   paddleWidth: number;
   paddleDistanceFromEdge: number;
   paddleRoundness: number;
+
+  //  bonus data
+  bonusX: number;
+  bonusY: number;
+  bonusTimer: number;
 }
 
 // Only used by the server and never sent to client
