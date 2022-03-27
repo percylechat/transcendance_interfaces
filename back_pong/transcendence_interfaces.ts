@@ -45,10 +45,10 @@ export interface pongMatchInfo {
   paddleDistanceFromEdge: number;
   paddleRoundness: number;
 
-  //  bonus data
-  bonusX: number;
-  bonusY: number;
-  bonusTimer: number;
+  //  powerUp data
+  powerUpX: number;
+  powerUpY: number;
+  powerUpTimer: number;
 }
 
 // Only used by the server and never sent to client
