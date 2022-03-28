@@ -72,3 +72,27 @@ export interface pongClientInput {
   userId: string;
   matchId: string;
 }
+
+export class last_matches {
+  first: string;
+  second: string;
+  third: string;
+ 
+  constructor(username: string) {
+    this.first = username + "won against Percy: 5 vs 4";
+    this.second = username + "lost againt Claire: 2 vs 7";
+    this.third = "";
+  }
+}
+
+export interface profile_info {
+  is_valid: boolean;
+  username: string;
+  avatar: string;
+  status: string;
+  ladder: number;
+  is_friend: boolean;
+  is_blocked: boolean;
+  matches: last_matches;
+  is_self: boolean
+}
