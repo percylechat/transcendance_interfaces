@@ -9,9 +9,13 @@ export interface pongMatchInfo {
   // game colors
   gameBackgroud: number;
   gameColor: number;
-  updateBall: boolean;
-  updateLeftPaddle: boolean;
-  updateRightPaddle: boolean;
+
+  // notification
+  notificationMain: string;
+  notificationSub: string;
+
+  // assets to update in the frontend
+  assetUpdates: string[];
 
   // timing
   startTime: number;
