@@ -53,6 +53,7 @@ export interface pongMatchInfo {
   paddleRoundness: number;
 
   //  powerUp data
+  isPowerUpActive: boolean;
   powerUpX: number;
   powerUpY: number;
   powerUpTimer: number;
