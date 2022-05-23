@@ -18,6 +18,7 @@ export interface pongMatchInfo {
   assetUpdates: string[];
 
   // timing
+  isMatchFinnished: boolean;
   isLeftPlayerReady: boolean;
   isRightPlayerReady: boolean;
   startTime: number;
