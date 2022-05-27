@@ -3,6 +3,8 @@
 // Sent the Client to display assets position and score mostly
 // back::pongLogic ==> front::pongClient
 export interface pongMatchInfo {
+  matchID: string;
+
   // sensitive values, should not be sent to client
   backOnlyValues: pongBackOnlyValues;
 
